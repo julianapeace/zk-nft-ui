@@ -6,16 +6,14 @@
 </template>
 
 <script>
-import { Strategy, ZkIdentity } from "@zk-kit/identity"
-import { Semaphore } from "@zk-kit/protocols"
+import { ZkIdentity } from "@zk-kit/identity"
+// import { Semaphore } from "@zk-kit/protocols"
 import HelloWorld from './components/HelloWorld.vue'
 
 
 try {
   const identity = new ZkIdentity()
   const identityCommitment = identity.genIdentityCommitment()
-  console.log('============================================');
-  console.log('============================================');
   console.log(identityCommitment);
 } catch (err) {
   console.log(err);

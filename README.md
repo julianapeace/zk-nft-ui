@@ -1,4 +1,4 @@
-# nft-semaphore
+# zk-nft-ui
 
 ## Project setup
 ```
